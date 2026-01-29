@@ -66,7 +66,7 @@ fun DiceWithImagesAndButton(modifier: Modifier = Modifier) {
     ) {
         Image(
             painter = painterResource(diceImageResource),
-            contentDescription = "1"
+            contentDescription = result.toString()
         )
         Spacer(modifier = Modifier.height(28.dp))
         Button(onClick= { result = (1..6).random() }) {
